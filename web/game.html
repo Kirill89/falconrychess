@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <title>Falconry chess online</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="main-wrapper">
+
+  <header class="main-header">
+    <a href="/">
+      <img src="img/logo.png" width="422" height="83" class="main-header__logo" alt="falconry chess online">
+      <a class="btn btn-link pull-right" href="https://github.com/Kirill89/falconrychess/issues">Feedback <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a>
+    </a>
+  </header>
+
+  <div class="game-container">
+
+    <audio class="game-beep">
+      <source src="beep.mp3" type="audio/mpeg">
+    </audio>
+
+    <p class="game-status lead text-center"></p>
+
+    <div class="game-log">
+      <div class="game-log__content">
+        <div class="game-log__num">
+          1
+        </div>
+        <div class="game-log__item">
+          PF3 - F5
+        </div>
+        <div class="game-log__item">
+          PC8 - C6
+        </div>
+        <div class="game-log__num">
+          1
+        </div>
+        <div class="game-log__item">
+          PF3 - F5
+        </div>
+        <div class="game-log__item">
+          PC8 - C6
+        </div>
+      </div>
+    </div>
+
+    <div class="game">
+      <div class="game__horizontal-bar">
+        <div class="game__horizontal-bar-item">Δ</div>
+        <div class="game__horizontal-bar-item">A</div>
+        <div class="game__horizontal-bar-item">B</div>
+        <div class="game__horizontal-bar-item">C</div>
+        <div class="game__horizontal-bar-item">D</div>
+        <div class="game__horizontal-bar-item">E</div>
+        <div class="game__horizontal-bar-item">F</div>
+        <div class="game__horizontal-bar-item">G</div>
+        <div class="game__horizontal-bar-item">H</div>
+        <div class="game__horizontal-bar-item">I</div>
+      </div>
+
+      <div class="game__horizontal-bar game__horizontal-bar__m-bottom">
+        <div class="game__horizontal-bar-item">Δ</div>
+        <div class="game__horizontal-bar-item">A</div>
+        <div class="game__horizontal-bar-item">B</div>
+        <div class="game__horizontal-bar-item">C</div>
+        <div class="game__horizontal-bar-item">D</div>
+        <div class="game__horizontal-bar-item">E</div>
+        <div class="game__horizontal-bar-item">F</div>
+        <div class="game__horizontal-bar-item">G</div>
+        <div class="game__horizontal-bar-item">H</div>
+        <div class="game__horizontal-bar-item">I</div>
+      </div>
+
+      <div class="game__vertical-bar">
+        <div class="game__vertical-bar-item">10</div>
+        <div class="game__vertical-bar-item">9</div>
+        <div class="game__vertical-bar-item">8</div>
+        <div class="game__vertical-bar-item">7</div>
+        <div class="game__vertical-bar-item">6</div>
+        <div class="game__vertical-bar-item">5</div>
+        <div class="game__vertical-bar-item">4</div>
+        <div class="game__vertical-bar-item">3</div>
+        <div class="game__vertical-bar-item">2</div>
+        <div class="game__vertical-bar-item">1</div>
+      </div>
+
+      <div class="game__vertical-bar game__vertical-bar__m-right">
+        <div class="game__vertical-bar-item">10</div>
+        <div class="game__vertical-bar-item">9</div>
+        <div class="game__vertical-bar-item">8</div>
+        <div class="game__vertical-bar-item">7</div>
+        <div class="game__vertical-bar-item">6</div>
+        <div class="game__vertical-bar-item">5</div>
+        <div class="game__vertical-bar-item">4</div>
+        <div class="game__vertical-bar-item">3</div>
+        <div class="game__vertical-bar-item">2</div>
+        <div class="game__vertical-bar-item">1</div>
+      </div>
+
+      <div class="game-field">
+        <div class="game-field__cell"></div>
+        <div class="game-field__cell game-field__cell__m-white"></div>
+        <div class="game-field__cell"></div>
+        <div class="game-field__cell game-field__cell__m-white"></div>
+        <div class="game-field__cell"></div>
+        <div class="game-field__cell game-field__cell__m-white"></div>
+        <div class="game-field__cell"></div>
+        <div class="game-field__cell game-field__cell__m-white"></div>
+        <div class="game-field__cell"></div>
+        <div class="game-field__cell game-field__cell__m-white"></div>
+
+        <div class="game-field__cell game-field__cell__m-white"></div>
+        <div class="game-field__cell"></div>
+        <div class="game-field__cell game-field__cell__m-white"></div>
+        <div class="game-field__cell"></div>
+        <div class="game-field__cell game-field__cell__m-white"></div>
+        <div class="game-field__cell"></div>
+        <div class="game-field__cell game-field__cell__m-white"></div>
+        <div class="game-field__cell"></div>
+        <div class="game-field__cell game-field__cell__m-white"></div>
+        <div class="game-field__cell"></div>
+
+        <div class="game-field__cell"></div>
+        <div class="game-field__cell game-field__cell__m-white"></div>
+        <div class="game-field__cell"></div>
+        <div class="game-field__cell game-field__cell__m-white"></div>
+        <div class="game-field__cell"></div>
+        <div class="game-field__cell game-field__cell__m-white"></div>
+        <div class="game-field__cell"></div>
+        <div class="game-field__cell game-field__cell__m-white"></div>
+        <div class="game-field__cell"></div>
+        <div class="game-field__cell game-field__cell__m-white"></div>
+
+        <div class="game-field__cell game-field__cell__m-white"></div>
+        <div class="game-field__cell"></div>
+        <div class="game-field__cell game-field__cell__m-white"></div>
+        <div class="game-field__cell"></div>
+        <div class="game-field__cell game-field__cell__m-white"></div>
+        <div class="game-field__cell"></div>
+        <div class="game-field__cell game-field__cell__m-white"></div>
+        <div class="game-field__cell"></div>
+        <div class="game-field__cell game-field__cell__m-white"></div>
+        <div class="game-field__cell"></div>
+
+        <div class="game-field__cell"></div>
+        <div class="game-field__cell game-field__cell__m-white"></div>
+        <div class="game-field__cell"></div>
+        <div class="game-field__cell game-field__cell__m-white"></div>
+        <div class="game-field__cell"></div>
+        <div class="game-field__cell game-field__cell__m-white"></div>
+        <div class="game-field__cell"></div>
+        <div class="game-field__cell game-field__cell__m-white"></div>
+        <div class="game-field__cell"></div>
+        <div class="game-field__cell game-field__cell__m-white"></div>
+
+        <div class="game-field__cell game-field__cell__m-white"></div>
+        <div class="game-field__cell"></div>
+        <div class="game-field__cell game-field__cell__m-white"></div>
+        <div class="game-field__cell"></div>
+        <div class="game-field__cell game-field__cell__m-white"></div>
+        <div class="game-field__cell"></div>
+        <div class="game-field__cell game-field__cell__m-white"></div>
+        <div class="game-field__cell"></div>
+        <div class="game-field__cell game-field__cell__m-white"></div>
+        <div class="game-field__cell"></div>
+
+        <div class="game-field__cell"></div>
+        <div class="game-field__cell game-field__cell__m-white"></div>
+        <div class="game-field__cell"></div>
+        <div class="game-field__cell game-field__cell__m-white"></div>
+        <div class="game-field__cell"></div>
+        <div class="game-field__cell game-field__cell__m-white"></div>
+        <div class="game-field__cell"></div>
+        <div class="game-field__cell game-field__cell__m-white"></div>
+        <div class="game-field__cell"></div>
+        <div class="game-field__cell game-field__cell__m-white"></div>
+
+        <div class="game-field__cell game-field__cell__m-white"></div>
+        <div class="game-field__cell"></div>
+        <div class="game-field__cell game-field__cell__m-white"></div>
+        <div class="game-field__cell"></div>
+        <div class="game-field__cell game-field__cell__m-white"></div>
+        <div class="game-field__cell"></div>
+        <div class="game-field__cell game-field__cell__m-white"></div>
+        <div class="game-field__cell"></div>
+        <div class="game-field__cell game-field__cell__m-white"></div>
+        <div class="game-field__cell"></div>
+
+        <div class="game-field__cell"></div>
+        <div class="game-field__cell game-field__cell__m-white"></div>
+        <div class="game-field__cell"></div>
+        <div class="game-field__cell game-field__cell__m-white"></div>
+        <div class="game-field__cell"></div>
+        <div class="game-field__cell game-field__cell__m-white"></div>
+        <div class="game-field__cell"></div>
+        <div class="game-field__cell game-field__cell__m-white"></div>
+        <div class="game-field__cell"></div>
+        <div class="game-field__cell game-field__cell__m-white"></div>
+
+        <div class="game-field__cell game-field__cell__m-white"></div>
+        <div class="game-field__cell"></div>
+        <div class="game-field__cell game-field__cell__m-white"></div>
+        <div class="game-field__cell"></div>
+        <div class="game-field__cell game-field__cell__m-white"></div>
+        <div class="game-field__cell"></div>
+        <div class="game-field__cell game-field__cell__m-white"></div>
+        <div class="game-field__cell"></div>
+        <div class="game-field__cell game-field__cell__m-white"></div>
+        <div class="game-field__cell"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="footer main-footer">
+    <p>
+      Efimov Kirill 2012 &copy;<br>
+      <a target="_blank" href="https://github.com/Kirill89/falconrychess">GitHub</a>
+    </p>
+  </footer>
+
+  <div class="modal fade select-replace-pawn-dlg" data-backdrop="static">
+    <div class="modal-dialog">
+      <div class="modal-content text-center">
+        <div class="modal-body">
+          <p>Please select new figure.</p>
+          <a href="#" data-fig-name="Queen" class="btn btn-default select-replace-pawn-dlg__button">
+            <img src="img/WHITE/Queen.png" alt="Queen">
+          </a>
+          <a href="#" data-fig-name="Horse" class="btn btn-default select-replace-pawn-dlg__button">
+            <img src="img/WHITE/Horse.png" alt="Horse">
+          </a>
+          <a href="#" data-fig-name="Rook" class="btn btn-default select-replace-pawn-dlg__button">
+            <img src="img/WHITE/Rook.png" alt="Rook">
+          </a>
+          <a href="#" data-fig-name="Elephant" class="btn btn-default select-replace-pawn-dlg__button">
+            <img src="img/WHITE/Elephant.png" alt="Elephant">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade select-replace-prince-dlg" data-backdrop="static">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content text-center">
+        <div class="modal-body">
+          <p>Please select new figure.</p>
+          <a href="#" data-fig-name="Falcon" class="btn btn-default select-replace-prince-dlg__button">
+            <img src="img/WHITE/Falcon.png" alt="Falcon">
+          </a>
+          <a href="#" data-fig-name="Dolphin" class="btn btn-default select-replace-prince-dlg__button">
+            <img src="img/WHITE/Dolphin.png" alt="Dolphin">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/game.js"></script>
+
+<!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter27992352 = new Ya.Metrika({id:27992352, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/27992352" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+</body>
+</html>

@@ -1,0 +1,212 @@
+body {
+  text-align: center;
+  height: 100%;
+  background: url("../img/globalbg.png");
+}
+
+html {
+  height: 100%;
+}
+
+.main-wrapper {
+  text-align: left;
+  width: 790px;
+  height: 100%;
+  margin: 0 auto;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.main-header {
+  margin: 10px 0px 20px 0px;
+}
+
+.main-header__logo {
+  margin: 10px 0px 10px 10px;
+}
+
+.new-game:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.new-game {
+  margin-bottom: 20px;
+  clear: both;
+}
+
+.new-game-block {
+  border-radius: 6px;
+  background: #eeeeee;
+  padding: 10px;
+  position: relative;
+  height: 190px;
+}
+
+.new-game-block__m-friend {
+  float: left;
+  width: 420px;
+}
+
+.new-game-block__m-rand {
+  float: right;
+  width: 350px;
+}
+
+.new-game-block__title {
+  margin-top: 0px;
+}
+
+.new-game-block__info {
+  position: absolute;
+  right: 0px;
+  top: 50px;
+}
+
+.new-game-block__m-friend .new-game-block__info {
+  width: 200px;
+}
+
+.new-game-block__m-rand .new-game-block__info {
+  width: 150px;
+}
+
+.new-game-block__m-rand .new-game-block__buttons {
+  width: 141px;
+}
+
+.new-game-block__m-friend .new-game-block__buttons {
+  width: 191px;
+}
+
+.new-game-block__buttons {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.new-game-block__buttons .btn {
+  width: 100%;
+  margin-top: 2px;
+}
+
+.new-game-block__buttons .btn span {
+  text-decoration: underline;
+}
+
+.main-footer {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.game {
+  width: 550px;
+  height: 550px;
+  position: relative;
+  padding: 25px;
+}
+
+.game-field {
+  width: 502px;
+  height: 502px;
+  border: 1px solid black;
+  position: relative;
+}
+
+.game__horizontal-bar {
+  position: absolute;
+  top: 0px;
+  left: 25px;
+  height: 15px;
+}
+
+.game__horizontal-bar__m-bottom {
+  top: auto;
+  bottom: 0px;
+}
+
+.game__vertical-bar__m-right {
+  left: auto !important;
+  right: 0px;
+}
+
+.game__horizontal-bar-item {
+  text-align: center;
+  width: 50px;
+  height: 25px;
+  float: left;
+}
+
+.game__vertical-bar {
+  position: absolute;
+  top: 25px;
+  left: 0px;
+}
+
+.game__vertical-bar-item {
+  width: 25px;
+  height: 50px;
+  padding-top: 16px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.game-field__cell {
+  width: 50px;
+  height: 50px;
+  float: left;
+  background: #9b9b9b;
+}
+
+.game-field__cell__m-white {
+  background: #ffffff;
+}
+
+.game-field__cell.game-field__cell__m-selected {
+  border: 2px solid #ff00ff;
+}
+
+.game-status {
+  padding: 5px 0px 5px 0px;
+}
+
+.game-container {
+  position: relative;
+}
+
+.game-log {
+  position: absolute;
+  right: 0px;
+  width: 210px;
+  height: 500px;
+  top: 84px;
+  overflow: auto;
+}
+
+.game-log__num {
+  float: left;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+
+.game-log__item {
+  float: left;
+  height: 20px;
+  width: 95px;
+  text-align: center;
+}
+
+.game-status {
+  position: relative;
+}
+
+.game-status__side-logo {
+  width: 30px;
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
